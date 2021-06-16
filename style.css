@@ -10,7 +10,7 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 69px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,6 +54,7 @@ header ul li a {
 .content .textBox {
   position: relative;
   max-width: 600px;
+  margin-right: 100px;
 }
 .content .textBox h2 {
   color: #333;
@@ -141,4 +142,146 @@ header ul li a {
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+
+@media (max-width: 991px) {
+  section {
+    flex-direction: column;
+    padding: 110px 35px 0;
+  }
+  header {
+    padding: 20px 15px;
+  }
+  header .logo {
+    max-width: 60px;
+    top: 5px;
+    left: 5px;
+  }
+  header ul li a {
+    top: 5px;
+    left: 10px;
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 15px;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+  .content .textBox {
+    width: 100%;
+  }
+  .content .textBox h2 {
+    white-space: nowrap;
+    text-align: start;
+    padding-left: 75px;
+    font-size: 30px;
+    line-height: 1.3em;
+    font-weight: 400;
+  }
+  .content .textBox h2 span {
+    font-weight: 700;
+  }
+  .content .textBox p {
+    padding-top: 20px;
+    padding-left: 75px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 75px;
+    padding: 5px 10px;
+    border-radius: 40px;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+  .content .imgBox img {
+    max-width: 100%;
+  }
+  .content .imgBox {
+    padding-left: 50px;
+    margin-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .sci {
+    top: 75%;
+    right: 5px;
+  }
+  .sci li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+  }
+  .thumb {
+    position: relative;
+    left: 45%;
+    bottom: 20px;
+    transform: translateX(-50%);
+  }
+  .thumb li img {
+    max-width: 40px;
+  }
+  .circle {
+    clip-path: circle(700px at right 1200px);
+  }
+}
+@media (min-width: 1920px) {
+  header {
+    padding: 50px 120px;
+  }
+  header .logo {
+    max-width: 100px;
+  }
+  header ul li a {
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 60px;
+  }
+  .content .textBox {
+    max-width: 800px;
+    margin-right: 150px;
+  }
+  .content .textBox h2 {
+    font-size: 5em;
+    line-height: 1.2em;
+    font-weight: 700;
+  }
+  .content .textBox p {
+    font-size: 27px;
+  }
+  .content .textBox a {
+    margin-top: 40px;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+  .sci {
+    top: 50%;
+    right: 50px;
+    transform: translateY(-30%);
+  }
+  .sci li a {
+    margin: 10px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+  }
+  .thumb {
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-40%);
+  }
+  .thumb li img {
+    max-width: 75px;
+  }
+  .content .imgBox {
+    max-width: 400px;
+  }
+  .circle {
+    clip-path: circle(900px at right 1200px);
+  }
 }
